@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff"),
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  background-color: #111111;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  min-width: 280px;
+  max-width: 793px;
+  padding-top: 49px;
+}
+
+.header__title {
+  font-family: "Archivo Black", "Arial", sans-serif;
+  font-size: 72px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header__subtitle {
+  color: #ffffff80;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.header__description {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.header__links-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.link__underline {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #4c1a97 0%, #6d6dff 100%);
+  margin-top: 5px;
+}
+
+.header__circle {
+  position: absolute;
+  top: 240px;
+  left: 813px;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background: rgba(109, 109, 255, 1);
+  z-index: -1;
+  filter: blur(10rem);
+}
+
+.header__image {
+  width: 387px;
+  height: 500px;
+}
+
+/*Main styles*/
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.main__title {
+  color: #ffffff;
+  font-family: "Archivo Black", "Arial", sans-serif;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.skill__icon {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
